@@ -43,7 +43,7 @@ function eConfig(atomic) {
     }
   }
 
-  return `[${orbits.join(" ")} ${orbitals[index]}${diff}]`;
+  return ((atomic > 2) ? `[${orbits.join(" ")} ${orbitals[index]}${diff}]`:`[1s${atomic}]`);
 }
 
 function eAbbrev(atomic) {
